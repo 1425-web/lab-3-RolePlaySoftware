@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+    color: #E7E5EF;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    padding: 0px 0px;
+}
+.grid-header,
+.grid-rightbar,
+.grid-sidebar,
+.grid-content,
+.grid-footer{
+    border: 2px solid #FAFF00;
+    padding: 10px 10px;
+    height: auto;
+    margin: 10px;
+}
+.layouts{
+    padding: 0px 30px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "side content rightbar"
+        "footer footer footer";
+}
+.grid-sidebar{
+
+    grid-area: side;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    padding: 0px;
+}
+.grid-rightbar{
+    grid-area: rightbar;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    padding: 0px;
+    text-align: right;
+}
+.grid-content{
+    grid-area: content;
+    text-align: center;
+    padding: 10px;
+    margin-top: 2px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.grid-footer{
+    grid-area: footer;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.grid-header{
+    grid-area: header;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.linkRV:visited,
+.linkRV:link{
+    text-decoration: none;
+    color: #E7E5EF;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 5px 10px;
+    
+}
+.linkRV:hover{
+    color: #FF9900;
+
+}
+.sideRV{
+    color: #FAFF00;
+    list-style-type: square;
+    font-size: 24px;
+    outline: 2px solid #FAFF00;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-left: 0px;
+}
+.sideRV:nth-child(2n){
+    color: #FF9900;
+}
+.linkRV.current{
+    color: #FF9900;
+}
+
+p{
+    text-align: left;
+}
+.sidebarRV{
+    margin: 0;
+      padding: 0px;
+}
+.outLi{
+    list-style-position: outside;
+}
+.inLi{
+    list-style-position: inside;
+}
+.ulstRV{
+    margin: 0;
+      padding: 0px;
+}
+.lstRV{
+    color: #FAFF00;
+    list-style-type: square;
+    font-size: 24px;
+    outline: 2px solid #FAFF00;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-left: 0px;
+}
+.lstRV:nth-child(2n){
+    color: #FF9900;
+}
+p{
+    text-indent: 20px;
+}
+.pimportant{
+    color: #FAFF00;
+    text-align: center;
+    text-indent: 0px;
+}
